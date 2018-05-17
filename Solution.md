@@ -1,9 +1,9 @@
-#Solution
+# Solution
 
 > Người viết bài còn tuy thiếu kinh nghiệm nhưng đề cao tinh thần học hỏi. Mọi sai sót vui lòng bỏ qua 🙂 .
 Pwn
 > Trình bày cách giải của bạn ở level 02 & 03 trong ví dụ 2 của bài training. Người chiến thằng là người có bài viết giải thích rõ ràng nhất. Materials: https://github.com/lamminhbao/sectrain2018
-##Level 2
+## Level 2
 
 Vì chúng ta có source code → nên ta biết hàm `f` thực hiện tạo biến `cookie` và xử lí chuỗi `s` nhập vào:
 
@@ -111,7 +111,7 @@ Tuy nhiên, thử đổi `0x01020304` sang ASCII, ta được:
     root@bach-kali:~/Desktop/sectrain2018# ./ex02 `echo -e "AhihiAhihiAhihiAhihiAhihiAhihi:>\x04\x03\x02\x01"`
     Cookie changed - You win level 00.
     Cookie to 0x1020304  - You win level 02.
-##Level 3
+## Level 3
 
 Ở thử thách này thì chúng ta cần phải thay đổi luồng thực thi để chương trình chạy hàm `abcxyz`.
 Vì địa chỉ trở về nằm trên `ebp` nên cần overflow qua cả `ebp` và ghi đè lên ô địa chỉ trả về.
